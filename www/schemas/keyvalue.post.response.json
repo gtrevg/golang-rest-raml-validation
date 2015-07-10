@@ -1,5 +1,5 @@
 {
-  "id": "schemas.keyvalue.post.response.json#",
+  "id": "/schemas/keyvalue.post.response.json#",
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "properties": {

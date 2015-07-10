@@ -1,5 +1,5 @@
 {
-  "id": "http://localhost/schemas/keyvalue.post.body.json#",
+  "id": "/schemas/keyvalue.post.body.json#",
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "properties": {

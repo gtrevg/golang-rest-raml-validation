@@ -27,7 +27,7 @@ func main() {
 		Middleware(web.StaticMiddleware("www")).
 		Post("/api/v0/keys", (*Context).createKeyValue)
 
-	http.ListenAndServe("localhost:3000", router)
+	http.ListenAndServe("localhost:8080", router)
 }
 
 // ===============================================

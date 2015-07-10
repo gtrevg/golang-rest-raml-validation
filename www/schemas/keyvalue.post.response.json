@@ -1,0 +1,9 @@
+{
+  "id": "schemas.keyvalue.post.response.json#",
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "message": { "type": "string" }
+  },
+  "required": [ "message" ]
+}

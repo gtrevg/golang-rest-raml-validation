@@ -1,0 +1,36 @@
+#%RAML 0.8
+title: Example REST API
+protocols: [ HTTPS ]
+baseUri: http://{server}/api/{version}/
+version: v0
+mediaType: application/json
+
+
+/keys:
+  get:
+    description: Returns all the key value pairs in the system
+
+  post:
+    description: Create a new key value pair
+    headers:
+      x-client-id:
+        description: The client id of the client
+        type: string
+        required: true
+        example: 5df69b05-92aa-4f52-8e45-b46500c97a5e
+
+    body:
+      application/json:
+        schema: !include keyvalue.post.body.json
+        example: !include keyvalue.post.body.example.json
+
+    responses:
+      200:
+        body:
+          application/json:
+            schema: !include keyvalue.post.response.json
+            example: !include keyvalue.post.response.example.json
+
+  /keys/{id}:
+    get:
+      description: Get a single key's value

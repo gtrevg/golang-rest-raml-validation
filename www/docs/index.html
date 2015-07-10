@@ -1,0 +1,137 @@
+<!DOCTYPE HTML><html><head><title>Example REST API API documentation</title><meta http-equiv=X-UA-Compatible content="IE=edge"><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=generator content="https://github.com/kevinrenskers/raml2html 1.0.3"><link rel=stylesheet href=http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css><link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css><script type=text/javascript src=http://code.jquery.com/jquery-1.11.0.min.js></script><script type=text/javascript src=http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js></script><script type=text/javascript src=http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js></script><script type=text/javascript>
+        $(document).ready(function() {
+            $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+            $('[data-toggle]').click(function() {
+                var selector = $(this).data('target') + ' pre code';
+                $(selector).each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+            });
+        });
+    </script><style>
+        .hljs {
+            background: transparent;
+        }
+        .parent {
+            color: #999;
+        }
+        .list-group-item > .badge {
+            float: none;
+            margin-right: 6px;
+        }
+        .panel-title > .methods {
+            float: right;
+        }
+        .badge {
+            border-radius: 0;
+            text-transform: uppercase;
+            width: 70px;
+            font-weight: normal;
+            color: #f3f3f6;
+            line-height: normal;
+        }
+        .badge_get {
+            background-color: #63a8e2;
+        }
+        .badge_post {
+            background-color: #6cbd7d;
+        }
+        .badge_put {
+            background-color: #22bac4;
+        }
+        .badge_delete {
+            background-color: #d26460;
+        }
+        .list-group, .panel-group {
+            margin-bottom: 0;
+        }
+        .panel-group .panel+.panel-white {
+            margin-top: 0;
+        }
+        .panel-group .panel-white {
+            border-bottom: 1px solid #F5F5F5;
+            border-radius: 0;
+        }
+        .panel-white:last-child {
+            border-bottom-color: white;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .panel-white .panel-heading {
+            background: white;
+        }
+        .tab-pane ul {
+            padding-left: 2em;
+        }
+        .tab-pane h2 {
+            font-size: 1.2em;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab-pane h3 {
+            font-size: 1.1em;
+        }
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        #sidebar {
+            margin-top: 30px;
+        }
+        .top-resource-description {
+            border-bottom: 1px solid #ddd;
+            background: #fcfcfc;
+            padding: 15px 15px 0 15px;
+            margin: -15px -15px 10px -15px;
+        }
+        .resource-description {
+            border-bottom: 1px solid #fcfcfc;
+            background: #fcfcfc;
+            padding: 15px 15px 0 15px;
+            margin: -15px -15px 10px -15px;
+        }
+        .list-group .badge {
+            float: left;
+        }
+        .method_description {
+            margin-left: 85px;
+        }
+        .method_description p:last-child {
+            margin: 0;
+        }
+        .list-group-item {
+            cursor: pointer;
+        }
+        .list-group-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style></head><body data-spy=scroll data-target=#sidebar><div class=container><div class=row><div class=col-md-9 role=main><div class=page-header><h1>Example REST API API documentation <small>version v0</small></h1><p>http://{server}/api/v0/</p></div><div class="panel panel-default"><div class=panel-heading><h3 id=_keys class=panel-title>/keys</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__keys><span class=parent></span>/keys</a> <span class=methods><a href=# data-toggle=modal data-target=#_keys_get><span class="badge badge_get">get</span></a> <a href=# data-toggle=modal data-target=#_keys_post><span class="badge badge_post">post</span></a></span></h4></div><div id=panel__keys class="panel-collapse collapse"><div class=panel-body><div class=list-group><div data-toggle=modal data-target=#_keys_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description><p>Returns all the key value pairs in the system</p></div><div class=clearfix></div></div><div data-toggle=modal data-target=#_keys_post class=list-group-item><span class="badge badge_post">post</span><div class=method_description><p>Create a new key value pair</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_keys_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent></span>/keys</h4></div><div class=modal-body><div class="alert alert-info"><p>Returns all the key value pairs in the system</p></div><ul class="nav nav-tabs"><li class=active><a href=#_keys_get_request data-toggle=tab>Request</a></li></ul><div class=tab-content><div class="tab-pane active" id=_keys_get_request></div></div></div></div></div></div><div class="modal fade" tabindex=0 id=_keys_post><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_post">post</span> <span class=parent></span>/keys</h4></div><div class=modal-body><div class="alert alert-info"><p>Create a new key value pair</p></div><ul class="nav nav-tabs"><li class=active><a href=#_keys_post_request data-toggle=tab>Request</a></li><li><a href=#_keys_post_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_keys_post_request><h3>Headers</h3><ul><li><strong>x-client-id</strong>: <em>required (string)</em><p>The client id of the client</p><p><strong>Example</strong>:</p><pre><code>5df69b05-92aa-4f52-8e45-b46500c97a5e</code></pre></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "id": "http://localhost/schemas/keyvalue.post.body.json#",
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "value": { "type": "string" }
+  },
+  "required": [ "value" ]
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "value": "Some value here."
+}
+</code></pre></div><div class=tab-pane id=_keys_post_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "id": "schemas.keyvalue.post.response.json#",
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "message": { "type": "string" }
+  },
+  "required": [ "message" ]
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  "message": "Success"
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__keys_keys__id_><span class=parent>/keys</span>/keys/{id}</a> <span class=methods><a href=# data-toggle=modal data-target=#_keys_keys__id__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__keys_keys__id_ class="panel-collapse collapse"><div class=panel-body><div class=list-group><div data-toggle=modal data-target=#_keys_keys__id__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description><p>Get a single key&#39;s value</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_keys_keys__id__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/keys</span>/keys/{id}</h4></div><div class=modal-body><div class="alert alert-info"><p>Get a single key&#39;s value</p></div><ul class="nav nav-tabs"><li class=active><a href=#_keys_keys__id__get_request data-toggle=tab>Request</a></li></ul><div class=tab-content><div class="tab-pane active" id=_keys_keys__id__get_request><h3>URI Parameters</h3><ul><li><strong>id</strong>: <em>required (string)</em></li></ul></div></div></div></div></div></div></div></div></div></div></div><div class=col-md-3><div id=sidebar class="hidden-print affix" role=complementary><ul class="nav nav-pills nav-stacked"><li><a href=#_keys>/keys</a></li></ul></div></div></div></div></body></html>

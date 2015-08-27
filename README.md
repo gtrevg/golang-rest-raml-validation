@@ -1,5 +1,6 @@
 # golang-rest-raml-validation
 
+This project is for a lightning talk I hacked together for [GopherCon 2015](https://youtu.be/jLAuWPls_W0).
 
 ### Generate documentation
 ~~~
